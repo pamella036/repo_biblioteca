@@ -6,7 +6,7 @@ const adapter = new PrismaMariaDb({
     port: 3306,
     user: "root",
     password: "123456",
-    database: "biblioteca",
+    database: "livros",
     connectionLimit: 5,
 });
 const prisma = new PrismaClient({ adapter });
