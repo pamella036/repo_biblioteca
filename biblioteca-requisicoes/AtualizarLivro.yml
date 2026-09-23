@@ -1,0 +1,24 @@
+info:
+  name: AtualizarLivro
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/livros/1
+  body: json
+  auth: inherit
+
+body:
+  json: |-
+    {
+      "titulo": "O Senhor dos Aneis",
+      "autor": "J.R.R. Tolkien",
+      "isbn": "978-0261103573",
+      "anoPublicacao": 1955
+    }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

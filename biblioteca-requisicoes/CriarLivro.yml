@@ -1,0 +1,24 @@
+info:
+  name: CriarLivro
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/livros
+  body: json
+  auth: inherit
+
+body:
+  json: |-
+    {
+      "titulo": "O Senhor dos Aneis",
+      "autor": "J.R.R. Tolkien",
+      "isbn": "978-0261103573",
+      "anoPublicacao": 1954
+    }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
